@@ -1,0 +1,31 @@
+id,query,ground_truth,routed_to,correct,strategy,workers,confidence,explanation,classification,type
+Q001,Will this customer come back and buy again?,W1,W1,True,SINGLE,['W1'],HIGH,"Clear routing to W1 (score: 2, next best: 0).",LIKELY_TO_RETURN,straightforward
+Q002,Is this a returning customer or a new one?,W1,W1,True,SINGLE,['W1'],HIGH,"Clear routing to W1 (score: 2, next best: 0).",LIKELY_TO_RETURN,straightforward
+Q003,How likely is this customer to make a repeat purchase?,W1,W1,True,SINGLE,['W1'],HIGH,"Clear routing to W1 (score: 2, next best: 0).",LIKELY_TO_RETURN,straightforward
+Q004,Predict whether this customer will churn.,W1,W1,True,SINGLE,['W1'],HIGH,"Clear routing to W1 (score: 2, next best: 0).",UNLIKELY_TO_RETURN,straightforward
+Q005,Which customers have not returned in over 6 months?,W1,W1,True,SINGLE,['W1'],HIGH,"Clear routing to W1 (score: 2, next best: 0).",LIKELY_TO_RETURN,straightforward
+Q006,Classify this customer as loyal or at-risk.,W1,W1,True,SINGLE,['W1'],HIGH,"Clear routing to W1 (score: 3, next best: 0).",LIKELY_TO_RETURN,straightforward
+Q007,Are our customers happy?,W1,W1,True,SINGLE,['W1'],HIGH,"Clear routing to W1 (score: 2, next best: 0).",LIKELY_TO_RETURN,ambiguous
+Q008,Why are we losing customers?,W1,W1,True,SINGLE,['W1'],HIGH,"Clear routing to W1 (score: 2, next best: 0).",UNLIKELY_TO_RETURN,ambiguous
+Q009,Which customers gave us bad reviews and are unlikely to return?,W1,W1,True,MULTI,"['W1', 'W3']",MEDIUM,"Multi-intent query detected. Primary: W1 (score: 2), Secondary: W3 (score: 1). Both workers will be involved.",LIKELY_TO_RETURN,multi-intent
+Q010,Give me a full overview of our customer journey.,W1,W1,True,SINGLE,['W1'],HIGH,"Clear routing to W1 (score: 2, next best: 0).",NEEDS_MORE_DATA,multi-intent
+Q011,Did this lead convert into a paying customer?,W2,W2,True,MULTI,"['W2', 'W1']",MEDIUM,"Multi-intent query detected. Primary: W2 (score: 2), Secondary: W1 (score: 1). Both workers will be involved.",LIKELY_TO_CONVERT,straightforward
+Q012,Was this marketing lead successfully closed?,W2,W2,True,SINGLE,['W2'],HIGH,"Clear routing to W2 (score: 3, next best: 0).",LIKELY_TO_CONVERT,straightforward
+Q013,Predict whether this qualified lead will convert.,W2,W2,True,SINGLE,['W2'],HIGH,"Clear routing to W2 (score: 3, next best: 0).",LIKELY_TO_CONVERT,straightforward
+Q014,How effective was our last marketing campaign?,W2,W2,True,SINGLE,['W2'],HIGH,"Clear routing to W2 (score: 2, next best: 0).",LIKELY_TO_CONVERT,straightforward
+Q015,Which leads from this month are most likely to close?,W2,W2,True,SINGLE,['W2'],HIGH,"Clear routing to W2 (score: 2, next best: 0).",LIKELY_TO_CONVERT,straightforward
+Q016,What is our lead to sale conversion rate this quarter?,W2,W2,True,SINGLE,['W2'],HIGH,"Clear routing to W2 (score: 2, next best: 0).",NEEDS_MORE_DATA,straightforward
+Q017,What is going wrong with our sales this month?,W2,W2,True,SINGLE,['W2'],HIGH,Routed to W2 (score: 1).,UNLIKELY_TO_CONVERT,ambiguous
+Q018,How is our business doing?,W2,W2,True,SINGLE,['W2'],HIGH,Routed to W2 (score: 1).,NEEDS_MORE_DATA,ambiguous
+Q019,Show me leads that converted and also left positive reviews.,W2,W2,True,MULTI,"['W2', 'W3']",MEDIUM,"Multi-intent query detected. Primary: W2 (score: 2), Secondary: W3 (score: 2). Both workers will be involved.",LIKELY_TO_CONVERT,multi-intent
+Q020,Which campaigns brought in customers who later gave 5 star reviews?,W2,W3,False,MULTI,"['W3', 'W1']",MEDIUM,"Multi-intent query detected. Primary: W3 (score: 2), Secondary: W1 (score: 1). Both workers will be involved.",POSITIVE,multi-intent
+Q021,Is this a positive or negative customer review?,W3,W3,True,SINGLE,['W3'],HIGH,"Clear routing to W3 (score: 3, next best: 1).",NEUTRAL,straightforward
+Q022,Classify this review as positive neutral or negative.,W3,W3,True,SINGLE,['W3'],HIGH,"Clear routing to W3 (score: 3, next best: 0).",NEUTRAL,straightforward
+Q023,What is the sentiment of this product review?,W3,W3,True,SINGLE,['W3'],HIGH,"Clear routing to W3 (score: 3, next best: 0).",NEUTRAL,straightforward
+Q024,Is this seller getting good or bad feedback?,W3,W3,True,SINGLE,['W3'],HIGH,"Clear routing to W3 (score: 2, next best: 0).",NEUTRAL,straightforward
+Q025,Which product categories are getting the most negative reviews?,W3,W3,True,SINGLE,['W3'],HIGH,"Clear routing to W3 (score: 4, next best: 0).",NEGATIVE,straightforward
+Q026,Which sellers have the worst customer satisfaction scores?,W3,W3,True,MULTI,"['W3', 'W1']",MEDIUM,"Multi-intent query detected. Primary: W3 (score: 3), Secondary: W1 (score: 2). Both workers will be involved.",NEGATIVE,straightforward
+Q027,Why are our ratings dropping?,W3,W3,True,SINGLE,['W3'],HIGH,Routed to W3 (score: 1).,NEGATIVE,ambiguous
+Q028,What can we improve?,W3,W3,True,SINGLE,['W3'],HIGH,Routed to W3 (score: 1).,POSITIVE,ambiguous
+Q029,Which sellers have the best reviews and highest customer retention?,W3,W1,False,MULTI,"['W1', 'W3']",MEDIUM,"Multi-intent query detected. Primary: W1 (score: 2), Secondary: W3 (score: 2). Both workers will be involved.",LIKELY_TO_RETURN,multi-intent
+Q030,Which product categories attract the most loyal customers?,W3,W1,False,MULTI,"['W1', 'W3']",MEDIUM,"Multi-intent query detected. Primary: W1 (score: 2), Secondary: W3 (score: 2). Both workers will be involved.",LIKELY_TO_RETURN,multi-intent

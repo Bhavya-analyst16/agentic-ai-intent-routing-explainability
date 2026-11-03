@@ -1,0 +1,29 @@
+{
+  "architecture": "Architecture 2 - Orchestrator-Workers Pattern",
+  "design_pattern": "Orchestrator-Workers (Andrew Ng, 2024; Anthropic, 2024)",
+  "date": "2026-08-19",
+  "total_queries": 30,
+  "correct": 27,
+  "overall_accuracy": 0.9,
+  "accuracy_by_type": {
+    "straightforward": 1.0,
+    "ambiguous": 1.0,
+    "multi-intent": 0.5
+  },
+  "accuracy_by_workflow": {
+    "W1": 1.0,
+    "W2": 0.9,
+    "W3": 0.8
+  },
+  "total_misrouted": 3,
+  "misrouted_ids": [
+    "Q020",
+    "Q029",
+    "Q030"
+  ],
+  "improvement_over_arch1": {
+    "overall": "+6.7%",
+    "ambiguous": "+33.3%",
+    "multi_intent": "0.0%"
+  }
+}

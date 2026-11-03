@@ -1,0 +1,31 @@
+id,query,ground_truth,routed_to,correct,confidence,explanation,classification,type
+Q001,Will this customer come back and buy again?,W1,W1,True,MEDIUM,Routed to W1 with medium confidence (2 keyword matches found).,LIKELY_TO_RETURN,straightforward
+Q002,Is this a returning customer or a new one?,W1,W1,True,MEDIUM,Routed to W1 with medium confidence (2 keyword matches found).,LIKELY_TO_RETURN,straightforward
+Q003,How likely is this customer to make a repeat purchase?,W1,W1,True,MEDIUM,Routed to W1 with medium confidence (2 keyword matches found).,LIKELY_TO_RETURN,straightforward
+Q004,Predict whether this customer will churn.,W1,W1,True,MEDIUM,Routed to W1 with medium confidence (2 keyword matches found).,UNLIKELY_TO_RETURN,straightforward
+Q005,Which customers have not returned in over 6 months?,W1,W1,True,MEDIUM,Routed to W1 with medium confidence (2 keyword matches found).,LIKELY_TO_RETURN,straightforward
+Q006,Classify this customer as loyal or at-risk.,W1,W1,True,HIGH,Routed to W1 with high confidence (3 keyword matches found).,LIKELY_TO_RETURN,straightforward
+Q007,Are our customers happy?,W1,W1,True,LOW,Routed to W1 with low confidence (only 1 keyword match found).,NEEDS_MORE_DATA,ambiguous
+Q008,Why are we losing customers?,W1,W1,True,LOW,Routed to W1 with low confidence (only 1 keyword match found).,NEEDS_MORE_DATA,ambiguous
+Q009,Which customers gave us bad reviews and are unlikely to return?,W1,W1,True,MEDIUM,Routed to W1 with medium confidence (2 keyword matches found).,LIKELY_TO_RETURN,multi-intent
+Q010,Give me a full overview of our customer journey.,W1,W1,True,LOW,Routed to W1 with low confidence (only 1 keyword match found).,NEEDS_MORE_DATA,multi-intent
+Q011,Did this lead convert into a paying customer?,W2,W2,True,MEDIUM,Routed to W2 with medium confidence (2 keyword matches found).,LIKELY_TO_CONVERT,straightforward
+Q012,Was this marketing lead successfully closed?,W2,W2,True,HIGH,Routed to W2 with high confidence (3 keyword matches found).,LIKELY_TO_CONVERT,straightforward
+Q013,Predict whether this qualified lead will convert.,W2,W2,True,HIGH,Routed to W2 with high confidence (3 keyword matches found).,LIKELY_TO_CONVERT,straightforward
+Q014,How effective was our last marketing campaign?,W2,W2,True,MEDIUM,Routed to W2 with medium confidence (2 keyword matches found).,NEEDS_MORE_DATA,straightforward
+Q015,Which leads from this month are most likely to close?,W2,W2,True,MEDIUM,Routed to W2 with medium confidence (2 keyword matches found).,LIKELY_TO_CONVERT,straightforward
+Q016,What is our lead to sale conversion rate this quarter?,W2,W2,True,MEDIUM,Routed to W2 with medium confidence (2 keyword matches found).,NEEDS_MORE_DATA,straightforward
+Q017,What is going wrong with our sales this month?,W2,W2,True,LOW,Routed to W2 with low confidence (only 1 keyword match found).,NEEDS_MORE_DATA,ambiguous
+Q018,How is our business doing?,W2,UNCLEAR,False,LOW,No clear workflow keywords found in this query.,OUT_OF_SCOPE,ambiguous
+Q019,Show me leads that converted and also left positive reviews.,W2,W2,True,MEDIUM,Routed to W2 with medium confidence (2 keyword matches found).,LIKELY_TO_CONVERT,multi-intent
+Q020,Which campaigns brought in customers who later gave 5 star reviews?,W2,W3,False,MEDIUM,Routed to W3 with medium confidence (2 keyword matches found).,POSITIVE,multi-intent
+Q021,Is this a positive or negative customer review?,W3,W3,True,HIGH,Routed to W3 with high confidence (3 keyword matches found).,NEUTRAL,straightforward
+Q022,Classify this review as positive neutral or negative.,W3,W3,True,HIGH,Routed to W3 with high confidence (3 keyword matches found).,NEUTRAL,straightforward
+Q023,What is the sentiment of this product review?,W3,W3,True,HIGH,Routed to W3 with high confidence (3 keyword matches found).,NEUTRAL,straightforward
+Q024,Is this seller getting good or bad feedback?,W3,W3,True,MEDIUM,Routed to W3 with medium confidence (2 keyword matches found).,NEUTRAL,straightforward
+Q025,Which product categories are getting the most negative reviews?,W3,W3,True,HIGH,Routed to W3 with high confidence (3 keyword matches found).,NEGATIVE,straightforward
+Q026,Which sellers have the worst customer satisfaction scores?,W3,W3,True,HIGH,Routed to W3 with high confidence (3 keyword matches found).,NEGATIVE,straightforward
+Q027,Why are our ratings dropping?,W3,W3,True,LOW,Routed to W3 with low confidence (only 1 keyword match found).,NEGATIVE,ambiguous
+Q028,What can we improve?,W3,UNCLEAR,False,LOW,No clear workflow keywords found in this query.,OUT_OF_SCOPE,ambiguous
+Q029,Which sellers have the best reviews and highest customer retention?,W3,W1,False,MEDIUM,Routed to W1 with medium confidence (2 keyword matches found).,LIKELY_TO_RETURN,multi-intent
+Q030,Which product categories attract the most loyal customers?,W3,W1,False,MEDIUM,Routed to W1 with medium confidence (2 keyword matches found).,LIKELY_TO_RETURN,multi-intent

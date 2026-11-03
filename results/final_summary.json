@@ -1,0 +1,80 @@
+{
+  "dissertation": {
+    "title": "Evaluating Agentic AI in Business Analysis: Intent Routing Accuracy and Error Explainability",
+    "student": "Bhavya Bhardwaj",
+    "id": "2515624",
+    "university": "Robert Gordon University, Aberdeen",
+    "date": "2026-07-26"
+  },
+  "dataset": {
+    "name": "Olist Brazilian E-Commerce + Marketing Funnel",
+    "source": "Kaggle (CC BY-NC licence)",
+    "total_queries_evaluated": 30,
+    "query_types": {
+      "straightforward": 18,
+      "ambiguous": 6,
+      "multi-intent": 6
+    }
+  },
+  "architectures": {
+    "architecture_1": {
+      "name": "Pure Routing Pattern",
+      "design_pattern": "Routing (Andrew Ng, 2024; Anthropic, 2024)",
+      "overall_accuracy": "83.3%",
+      "straightforward": "100.0%",
+      "ambiguous": "66.7%",
+      "multi_intent": "50.0%",
+      "misrouted": "5/30",
+      "key_limitation": "Cannot handle vague or multi-intent queries"
+    },
+    "architecture_2": {
+      "name": "Orchestrator-Workers Pattern",
+      "design_pattern": "Orchestrator-Workers (Andrew Ng, 2024; Anthropic, 2024)",
+      "overall_accuracy": "90.0%",
+      "straightforward": "100.0%",
+      "ambiguous": "100.0%",
+      "multi_intent": "50.0%",
+      "misrouted": "3/30",
+      "key_improvement": "Fixed all ambiguous query failures",
+      "key_limitation": "Still fails on multi-intent queries"
+    },
+    "architecture_3": {
+      "name": "Reflection Pattern",
+      "design_pattern": "Reflection (Andrew Ng, 2024)",
+      "dual_prompting": "Factual + Contrastive Explanation",
+      "overall_accuracy": "90.0%",
+      "straightforward": "100.0%",
+      "ambiguous": "100.0%",
+      "multi_intent": "50.0%",
+      "misrouted": "3/30",
+      "key_improvement": "Correctly flagged UNCERTAIN on ALL misrouted queries",
+      "key_limitation": "Does not improve routing accuracy over Architecture 2"
+    }
+  },
+  "key_findings": [
+    "Architecture 2 and 3 outperform Architecture 1 by 6.7%",
+    "Biggest improvement: ambiguous queries 66.7% to 100.0%",
+    "Multi-intent queries remain unsolved at 50.0% across all architectures",
+    "Architecture 3 correctly flagged uncertainty on ALL misrouted queries",
+    "Architecture 3 is most trustworthy \u2014 honest about its own limitations",
+    "Keyword-based routing has fundamental ceiling on multi-intent queries"
+  ],
+  "research_questions_answered": {
+    "RQ1": "Three agentic architectures designed using Routing, Orchestrator-Workers, and Reflection patterns",
+    "RQ2": "Overall accuracy 83.3-90.0%, degrades on ambiguous (66.7-100%) and multi-intent (50%) queries",
+    "RQ3": "Architecture 3 produces factual and contrastive explanations \u2014 correctly flags uncertainty on misrouted cases, demonstrating honest self-awareness over plausible but incorrect confidence"
+  },
+  "files_saved": {
+    "arch1_results": "Results/arch1_results.csv",
+    "arch1_summary": "Results/arch1_summary.json",
+    "arch1_diagram": "Results/arch1_diagram.png",
+    "arch2_results": "Results/arch2_results.csv",
+    "arch2_summary": "Results/arch2_summary.json",
+    "arch2_diagram": "Results/arch2_diagram.png",
+    "arch3_results": "Results/arch3_results.csv",
+    "arch3_summary": "Results/arch3_summary.json",
+    "arch3_diagram": "Results/arch3_diagram.png",
+    "comparison_charts": "Results/comparison_charts.png",
+    "labelled_queries": "Evaluation/labelled_queries.csv"
+  }
+}

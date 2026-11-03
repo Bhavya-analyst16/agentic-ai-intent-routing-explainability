@@ -1,0 +1,26 @@
+{
+  "architecture": "Architecture 1 - Pure Routing Pattern",
+  "design_pattern": "Routing (Andrew Ng, 2024; Anthropic, 2024)",
+  "date": "2026-08-21",
+  "total_queries": 30,
+  "correct": 25,
+  "overall_accuracy": 0.8333,
+  "accuracy_by_type": {
+    "straightforward": 1.0,
+    "ambiguous": 0.6667,
+    "multi-intent": 0.5
+  },
+  "accuracy_by_workflow": {
+    "W1": 1.0,
+    "W2": 0.8,
+    "W3": 0.7
+  },
+  "total_misrouted": 5,
+  "misrouted_ids": [
+    "Q018",
+    "Q020",
+    "Q028",
+    "Q029",
+    "Q030"
+  ]
+}

@@ -1,0 +1,31 @@
+id,query,ground_truth,type
+Q001,Will this customer come back and buy again?,W1,straightforward
+Q002,Is this a returning customer or a new one?,W1,straightforward
+Q003,How likely is this customer to make a repeat purchase?,W1,straightforward
+Q004,Predict whether this customer will churn.,W1,straightforward
+Q005,Which customers have not returned in over 6 months?,W1,straightforward
+Q006,Classify this customer as loyal or at-risk.,W1,straightforward
+Q007,Are our customers happy?,W1,ambiguous
+Q008,Why are we losing customers?,W1,ambiguous
+Q009,Which customers gave us bad reviews and are unlikely to return?,W1,multi-intent
+Q010,Give me a full overview of our customer journey.,W1,multi-intent
+Q011,Did this lead convert into a paying customer?,W2,straightforward
+Q012,Was this marketing lead successfully closed?,W2,straightforward
+Q013,Predict whether this qualified lead will convert.,W2,straightforward
+Q014,How effective was our last marketing campaign?,W2,straightforward
+Q015,Which leads from this month are most likely to close?,W2,straightforward
+Q016,What is our lead to sale conversion rate this quarter?,W2,straightforward
+Q017,What is going wrong with our sales this month?,W2,ambiguous
+Q018,How is our business doing?,W2,ambiguous
+Q019,Show me leads that converted and also left positive reviews.,W2,multi-intent
+Q020,Which campaigns brought in customers who later gave 5 star reviews?,W2,multi-intent
+Q021,Is this a positive or negative customer review?,W3,straightforward
+Q022,Classify this review as positive neutral or negative.,W3,straightforward
+Q023,What is the sentiment of this product review?,W3,straightforward
+Q024,Is this seller getting good or bad feedback?,W3,straightforward
+Q025,Which product categories are getting the most negative reviews?,W3,straightforward
+Q026,Which sellers have the worst customer satisfaction scores?,W3,straightforward
+Q027,Why are our ratings dropping?,W3,ambiguous
+Q028,What can we improve?,W3,ambiguous
+Q029,Which sellers have the best reviews and highest customer retention?,W3,multi-intent
+Q030,Which product categories attract the most loyal customers?,W3,multi-intent

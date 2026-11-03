@@ -1,0 +1,26 @@
+{
+  "architecture": "Architecture 3 - Reflection Pattern",
+  "design_pattern": "Reflection (Andrew Ng, 2024)",
+  "dual_prompting": "Factual + Contrastive Explanation",
+  "date": "2026-08-19",
+  "total_queries": 30,
+  "correct": 27,
+  "overall_accuracy": 0.9,
+  "accuracy_by_type": {
+    "straightforward": 1.0,
+    "ambiguous": 1.0,
+    "multi-intent": 0.5
+  },
+  "accuracy_by_workflow": {
+    "W1": 1.0,
+    "W2": 0.9,
+    "W3": 0.8
+  },
+  "reflection_verdicts": {
+    "CONFIRM": 27,
+    "UNCERTAIN": 3,
+    "REVISE": 0
+  },
+  "routing_revised": 0,
+  "key_finding": "Architecture 3 matches Architecture 2 accuracy but adds honest uncertainty flagging on all misrouted queries \u2014 improving explainability without sacrificing accuracy"
+}
